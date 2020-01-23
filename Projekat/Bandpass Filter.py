@@ -25,8 +25,8 @@ for i in range(48000):
 output = filter(input)
 
 # Pozivanje ulaznih i izlaznih uzoraka
-output_ = output[0:480]  
-input_ = input[0:480] 
+output_ = output[0:4800]  
+input_ = input[0:4800] 
 
 # Plotovanje signala i uporedjivanje
 plt.figure(1)                
