@@ -19,7 +19,7 @@ output = [0]*48000
 
 # Popunjavanje niza unetom frekvecijom
 for i in range(48000):
-    input[i] = sin(2 * pi * frequency * i / 48000) 
+    input[i] = sin(2 * pi * frequency * i / 48000)#+ sin(2 * pi * 70 * i / 48000) 
 
 # Filtriranje signala
 output = filter(input)
