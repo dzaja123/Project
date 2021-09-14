@@ -1,6 +1,6 @@
-import matplotlib.pyplot as plt #Plotovanje
-from math import sin, pi #Generisanje ulaznih signala
-import sys #Citanje argumenata 
+import matplotlib.pyplot as plt # Plotovanje
+from math import sin, pi # Generisanje ulaznih signala
+import sys # Citanje argumenata 
 
 # Filter opsega 6KHz-8Khz 
 
@@ -10,7 +10,7 @@ def filter(x):
         y[n] = 0.0101*x[n] - 0.0202*x[n-2] + 0.0101*x[n-4] + 2.4354*y[n-1] - 3.1869*y[n-2] + 2.0889*y[n-3] - 0.7368*y[n-4] 
     return y
 
-#Citanje unete frekvencije
+# Citanje unete frekvencije
 frequency = int(sys.argv[1])	
 	
 # Fromiranje ulaznog i izlaznog niza
